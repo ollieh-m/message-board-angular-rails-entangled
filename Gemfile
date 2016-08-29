@@ -22,6 +22,7 @@ group :development do
 end
 
 gem 'bower-rails'
+gem 'angular-rails-templates'
 
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
