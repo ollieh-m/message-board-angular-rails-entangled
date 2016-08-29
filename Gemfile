@@ -39,3 +39,6 @@ group :production, :staging do
   gem "rails_stdout_logging"
   gem "rails_serve_static_assets"
 end
+
+gem 'teaspoon-jasmine'
+gem 'phantomjs'
