@@ -1,4 +1,4 @@
-var messageboard = angular.module('messageboard', [ 'templates', 'ngRoute', 'controllers' ] );
+var messageboard = angular.module('messageboard', [ 'templates', 'ngRoute', 'controllers', 'entangled' ] );
 
 messageboard.config([ '$routeProvider', function($routeProvider){
   $routeProvider.when('/',{

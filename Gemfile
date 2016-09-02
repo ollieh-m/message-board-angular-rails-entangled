@@ -42,3 +42,5 @@ end
 
 gem 'teaspoon-jasmine'
 gem 'phantomjs'
+gem 'entangled'
+gem 'puma'

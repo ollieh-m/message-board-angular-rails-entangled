@@ -1,0 +1,23 @@
+{
+  "name": "entangled-angular",
+  "authors": [
+    "Dennis Charles Hackethal <dennis.hackethal@gmail.com>"
+  ],
+  "description": "Angular library that communicates with a real time backend to enable three way data binding",
+  "license": "MIT",
+  "homepage": "https://github.com/dchacke/entangled-angular",
+  "ignore": [
+    "LICENCE",
+    "README.md"
+  ],
+  "main": "entangled-angular.js",
+  "_release": "d52754627f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "d52754627f453edf064244c00fc530d14e8f68eb"
+  },
+  "_source": "https://github.com/dchacke/entangled-angular.git",
+  "_target": "*",
+  "_originalSource": "entangled-angular"
+}
