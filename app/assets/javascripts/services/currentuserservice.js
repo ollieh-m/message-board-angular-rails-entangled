@@ -1,0 +1,3 @@
+messageboard.service('CurrentUser',function(){
+  
+});
