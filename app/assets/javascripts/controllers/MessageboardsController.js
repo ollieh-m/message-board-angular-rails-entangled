@@ -17,8 +17,9 @@ controllers.controller('MessageboardsController', ['$scope','Messageboard','Curr
   
     $scope.messageboard = Messageboard.new();
   
-    $scope.addMessageBoard = function(d) {
+    $scope.addMessageBoard = function() {
       $scope.messageboard.$save(function(){
+        console.log($scope.messageboard);
         $scope.$apply(function(){
           $scope.messageboard = Messageboard.new();
         });
