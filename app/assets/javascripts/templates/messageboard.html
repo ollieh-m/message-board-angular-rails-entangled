@@ -1,0 +1,19 @@
+<h1>Messageboard {{messageboard.name}}</h1>
+
+<section class='row' ng-if='messages'>
+  <ul>
+    <li ng-repeat='message in messages'>
+      {{message.username}}
+      {{message.content}}
+    </li>
+  </ul>
+</section>
+
+<form ng-submit="addMessage(message)">
+  <input type="text" ng-model="message.content">
+  <input type="submit">
+</form>
+
+<p>Current user is {{username}}</p>
+
+<button ng-click="back()">Back</button>

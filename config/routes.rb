@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'home#index'
-  sockets_for :messages, only: [:index, :create]
+  sockets_for :messageboards, only: [:show,:index,:create] do
+    sockets_for :messages, only: [:index, :create]
+  end
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

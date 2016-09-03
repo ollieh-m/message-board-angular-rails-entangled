@@ -3,7 +3,7 @@ class MessagesController < ApplicationController
 
   def index
     broadcast do
-      @messages = Message.all
+      @messages = Message.where(messageboard_id: params[:messageboard_id])
     end
   end
   
@@ -15,7 +15,9 @@ class MessagesController < ApplicationController
 
   def create
     broadcast do
-      @message = Message.create(message_params)
+      @message = Message.new(message_params)
+      @message.messageboard = Messageboard.find(params[:messageboard_id])
+      @message.save
     end
   end
 

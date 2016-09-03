@@ -2,7 +2,10 @@ var messageboard = angular.module('messageboard', [ 'templates', 'ngRoute', 'con
 
 messageboard.config([ '$routeProvider', function($routeProvider){
   $routeProvider.when("/",{
-    templateUrl: "index.html",
+    templateUrl: "messageboards.html",
+    controller: "MessageboardsController"
+  }).when("/messageboards/:id",{
+    templateUrl: "messageboard.html",
     controller: "MessageboardController"
   });
 }]);

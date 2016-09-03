@@ -1,0 +1,18 @@
+<h1>Messageboards</h1>
+
+<section class='row' ng-if='messageboards'>
+  <ul>
+    <li ng-repeat='messageboard in messageboards'>
+      <a href ng-click="view(messageboard.id)">{{messageboard.name}}</a>
+      {{messageboard.description}}
+    </li>
+  </ul>
+</section>
+
+<form ng-submit="addMessageBoard()">
+  <input type="text" ng-model="messageboard.name">
+  <input type="text" ng-model="messageboard.description">
+  <input type="submit">
+</form>
+
+<p>Current user is {{username}}</p>
