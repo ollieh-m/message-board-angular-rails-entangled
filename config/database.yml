@@ -1,7 +1,8 @@
 default: &default
-  adapter: postgresql
-  encoding: SQL_ASCII
-  pool: 5
+  adapter: mysql
+  encoding: utf8
+  username: <%=ENV['C9_USER']%>
+  host: <%=ENV['IP']%>
 
 development:
   <<: *default
